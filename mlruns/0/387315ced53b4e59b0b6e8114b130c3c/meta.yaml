@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/387315ced53b4e59b0b6e8114b130c3c/artifacts
+end_time: 1688565517219
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 387315ced53b4e59b0b6e8114b130c3c
+run_name: charming-roo-942
+run_uuid: 387315ced53b4e59b0b6e8114b130c3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688565499881
+status: 3
+tags: []
+user_id: user

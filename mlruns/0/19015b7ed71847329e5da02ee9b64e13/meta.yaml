@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/19015b7ed71847329e5da02ee9b64e13/artifacts
+end_time: 1688565159589
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 19015b7ed71847329e5da02ee9b64e13
+run_name: tasteful-newt-765
+run_uuid: 19015b7ed71847329e5da02ee9b64e13
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688565084969
+status: 3
+tags: []
+user_id: user
