@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/d546d5c7b80d487989df7c8c6b34c23b/artifacts
+end_time: 1688568114868
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d546d5c7b80d487989df7c8c6b34c23b
+run_name: dapper-gnu-766
+run_uuid: d546d5c7b80d487989df7c8c6b34c23b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688568081423
+status: 3
+tags: []
+user_id: user

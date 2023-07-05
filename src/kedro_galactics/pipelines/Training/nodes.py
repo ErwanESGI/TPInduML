@@ -38,9 +38,10 @@ def training_model(train_data, train_labels, test_data, test_label, epochs=10, b
     model = create_model()
 
     mlflow.autolog()
-
+    
     # Entraînement du modèle
     model.fit(train_data, train_labels, epochs=epochs, batch_size=batch_size)
+
 
 
 

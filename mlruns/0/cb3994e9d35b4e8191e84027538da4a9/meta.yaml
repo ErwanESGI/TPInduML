@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/cb3994e9d35b4e8191e84027538da4a9/artifacts
+end_time: 1688567798854
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cb3994e9d35b4e8191e84027538da4a9
+run_name: intrigued-smelt-957
+run_uuid: cb3994e9d35b4e8191e84027538da4a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688567740230
+status: 3
+tags: []
+user_id: user
