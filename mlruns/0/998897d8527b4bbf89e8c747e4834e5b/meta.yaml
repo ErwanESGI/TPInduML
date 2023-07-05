@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/998897d8527b4bbf89e8c747e4834e5b/artifacts
+end_time: 1688574267399
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 998897d8527b4bbf89e8c747e4834e5b
+run_name: stylish-rat-280
+run_uuid: 998897d8527b4bbf89e8c747e4834e5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688574267295
+status: 4
+tags: []
+user_id: user

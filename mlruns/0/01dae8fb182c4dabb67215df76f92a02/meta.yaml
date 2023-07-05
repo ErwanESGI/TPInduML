@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/01dae8fb182c4dabb67215df76f92a02/artifacts
+end_time: 1688568528523
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 01dae8fb182c4dabb67215df76f92a02
+run_name: unleashed-gull-764
+run_uuid: 01dae8fb182c4dabb67215df76f92a02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688568493556
+status: 3
+tags: []
+user_id: user
