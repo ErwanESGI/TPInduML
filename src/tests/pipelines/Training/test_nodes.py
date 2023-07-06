@@ -1,32 +1,24 @@
-"""
-This is a boilerplate test file for pipeline 'SelectionAndTraining'
-generated using Kedro 0.18.10.
-Please add your pipeline tests here.
+import numpy as np
+from unittest.mock import patch
+from kedro_galactics.pipelines.Training.nodes import create_model
 
-Kedro recommends using `pytest` framework, more info about it can be found
-in the official documentation:
-https://docs.pytest.org/en/latest/getting-started.html
-"""
-from sklearn.metrics import accuracy_score
-import pytest
-from kedro_galactics.pipelines.Training.nodes import training_model
+@patch('Training.create_model')
+@patch('Training.mlflow.autolog')
+def test_training_model(mock_autolog, mock_create_model):
+    # Données de test fictives
+    train_data = np.random.rand(100, 7, 1)
+    train_labels = np.random.rand(100, 7)
+    test_data = np.random.rand(20, 7, 1)
+    test_labels = np.random.rand(20, 7)
 
+    # Mocking de la fonction create_model
+    mock_model = mock_create_model.return_value
 
-@pytest.fixture
-def model():
-    return training_model('train_data', 'train_labels', 'test_data', 'test_label')
+    # Appel de la fonction à tester
+    result = create_model(train_data, train_labels, test_data, test_labels, epochs=10, batch_size=32)
 
-def test_model_performance(model,train_data,test_label):
-
-    # Obtenir une instance du modèle entraîné   
-    trained_model  = model()
-    
-    # Prédiction sur les données de test
-    y_pred = trained_model.predict(train_data)
-
-    # Calcul de la métrique de performance (ex: accuracy)
-    accuracy = accuracy_score(train_data, y_pred)
-
-    print(accuracy)
-    # Vérification de la métrique de performance à l'aide d'une assertion
-    assert int(accuracy) > 0.4 
+    # Vérifications
+    assert result == ["train_data", "train_labels", "test_data", "test_labels"]  # Vérifie que la sortie est correcte
+    mock_autolog.assert_called_once()  # Vérifie que la fonction mlflow.autolog a été appelée une fois
+    mock_create_model.assert_called_once()  # Vérifie que la fonction create_model a été appelée une fois
+    mock_model.fit.assert_called_once_with(train_data, train_labels, epochs=5, batch_size=32)  # Vérifie que la méthode fit a été appelée avec les bons argument

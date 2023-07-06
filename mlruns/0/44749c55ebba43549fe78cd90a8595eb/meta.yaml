@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/44749c55ebba43549fe78cd90a8595eb/artifacts
+end_time: 1688631681476
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 44749c55ebba43549fe78cd90a8595eb
+run_name: mercurial-bear-400
+run_uuid: 44749c55ebba43549fe78cd90a8595eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688631653441
+status: 3
+tags: []
+user_id: user

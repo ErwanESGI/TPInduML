@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/effa9451e694405187d322e4b321be61/artifacts
+end_time: 1688630768977
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: effa9451e694405187d322e4b321be61
+run_name: monumental-toad-930
+run_uuid: effa9451e694405187d322e4b321be61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688630768843
+status: 4
+tags: []
+user_id: user

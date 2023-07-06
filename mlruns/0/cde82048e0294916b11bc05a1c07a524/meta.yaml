@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/cde82048e0294916b11bc05a1c07a524/artifacts
+end_time: 1688632460995
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cde82048e0294916b11bc05a1c07a524
+run_name: languid-calf-694
+run_uuid: cde82048e0294916b11bc05a1c07a524
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688632431814
+status: 3
+tags: []
+user_id: user

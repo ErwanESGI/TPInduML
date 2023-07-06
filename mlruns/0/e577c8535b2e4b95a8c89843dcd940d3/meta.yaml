@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/e577c8535b2e4b95a8c89843dcd940d3/artifacts
+end_time: 1688632417692
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e577c8535b2e4b95a8c89843dcd940d3
+run_name: honorable-snail-299
+run_uuid: e577c8535b2e4b95a8c89843dcd940d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688632392955
+status: 4
+tags: []
+user_id: user

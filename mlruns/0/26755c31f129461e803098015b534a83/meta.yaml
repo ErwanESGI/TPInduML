@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/26755c31f129461e803098015b534a83/artifacts
+end_time: 1688632245674
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 26755c31f129461e803098015b534a83
+run_name: bold-whale-892
+run_uuid: 26755c31f129461e803098015b534a83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688632202205
+status: 3
+tags: []
+user_id: user

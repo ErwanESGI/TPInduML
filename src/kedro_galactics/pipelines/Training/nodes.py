@@ -9,21 +9,22 @@ def create_model(input_shape=(7, 1), units=256, activation='relu', l2_value=0.00
     inputs = layers.Input(shape=input_shape)
 
     # Définition des couches de convolution
+
     x = layers.Conv1D(filters=32, kernel_size=3, activation=activation)(inputs)
     x = layers.MaxPooling1D(pool_size=2)(x)
     x = layers.ZeroPadding1D(padding=1)(x)
     x = layers.Conv1D(filters=64, kernel_size=3, activation=activation)(x)
     x = layers.ZeroPadding1D(padding=1)(x)
     x = layers.MaxPooling1D(pool_size=2)(x)
-
+    
     # Aplatir les données
-    x = layers.Flatten()(x)
+    x = layers.Flatten()(inputs)
 
     # Définition des couches entièrement connectées
     x = layers.Dense(units, activation='relu', kernel_regularizer=regularizers.l2(l2_value))(x)
     if dropout_rate is not None:
         x = layers.Dropout(dropout_rate)(x)
-    x = layers.Dense(input_shape[0], activation='softmax')(x)
+    x = layers.Dense(input_shape[0], activation='relu')(x)
 
     # Création du modèle
     model = tf.keras.Model(inputs=inputs, outputs=x)
