@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/ffdfd64c7efd47708ef976a3a499c254/artifacts
+end_time: 1688640677855
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ffdfd64c7efd47708ef976a3a499c254
+run_name: unleashed-skunk-317
+run_uuid: ffdfd64c7efd47708ef976a3a499c254
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688640649803
+status: 3
+tags: []
+user_id: user

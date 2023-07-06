@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/acbd3127ffac484bbcb5e76fcddac3a8/artifacts
+end_time: 1688640504045
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: acbd3127ffac484bbcb5e76fcddac3a8
+run_name: worried-croc-518
+run_uuid: acbd3127ffac484bbcb5e76fcddac3a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688640503968
+status: 4
+tags: []
+user_id: user

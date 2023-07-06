@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/2a41a3930e8c45d9bf47afe069a07cc1/artifacts
+end_time: 1688643758065
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2a41a3930e8c45d9bf47afe069a07cc1
+run_name: persistent-conch-438
+run_uuid: 2a41a3930e8c45d9bf47afe069a07cc1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688643718773
+status: 3
+tags: []
+user_id: user

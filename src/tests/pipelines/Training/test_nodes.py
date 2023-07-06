@@ -1,24 +1,41 @@
-import numpy as np
-from unittest.mock import patch
-from kedro_galactics.pipelines.Training.nodes import create_model
+import pytest
+import pandas as pd
+import mlflow
+from sklearn.metrics import mean_squared_error
+from math import sqrt
 
-@patch('Training.create_model')
-@patch('Training.mlflow.autolog')
-def test_training_model(mock_autolog, mock_create_model):
-    # Données de test fictives
-    train_data = np.random.rand(100, 7, 1)
-    train_labels = np.random.rand(100, 7)
-    test_data = np.random.rand(20, 7, 1)
-    test_labels = np.random.rand(20, 7)
+def test_model():
+    test_df_x = pd.read_csv("data/05_model_input/test.csv")
+    test_df_y = pd.read_csv("data/05_model_input/test_labels.csv")
 
-    # Mocking de la fonction create_model
-    mock_model = mock_create_model.return_value
+    test_df_x = test_df_x.to_numpy()
+    test_df_y = test_df_y.to_numpy()
+    # assert test_x.shape == test_y.shape
+    test_df_x = test_df_x.reshape((-1, 7, 1))
+    test_df_y = test_df_y.reshape((-1, 7, 1))
+    # Vérification de l'accuracy
 
-    # Appel de la fonction à tester
-    result = create_model(train_data, train_labels, test_data, test_labels, epochs=10, batch_size=32)
+    # Chargement d'un modèle depuis MLflow
+    model = mlflow.tensorflow.load_model('runs:/238f96bf4c96412e962aa6fe76e673d0/model')
+    predictions = model.predict(test_df_x)
 
-    # Vérifications
-    assert result == ["train_data", "train_labels", "test_data", "test_labels"]  # Vérifie que la sortie est correcte
-    mock_autolog.assert_called_once()  # Vérifie que la fonction mlflow.autolog a été appelée une fois
-    mock_create_model.assert_called_once()  # Vérifie que la fonction create_model a été appelée une fois
-    mock_model.fit.assert_called_once_with(train_data, train_labels, epochs=5, batch_size=32)  # Vérifie que la méthode fit a été appelée avec les bons argument
+    test_df_y = test_df_x.reshape(-1,7)
+
+    # Calcul du %erreurs root-mean-square
+    mse = sqrt(mean_squared_error(predictions, test_df_y))
+    print(mse)
+
+pytest.main()
+
+
+"""def test_model_performance(model, test_data, test_label):
+    # Création du modèle
+    model = create_model()
+    # Prédiction sur les données de test
+    y_pred = model.predict(test_data)
+
+    # Calcul de la métrique de performance (ex: accuracy)
+    accuracy = accuracy_score(test_label, y_pred)
+
+    # Vérification de la métrique de performance à l'aide d'une assertion
+    assert accuracy > 0.4  # Exemple d'assertion sur l'accuracy"""

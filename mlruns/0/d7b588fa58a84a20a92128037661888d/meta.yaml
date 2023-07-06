@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/d7b588fa58a84a20a92128037661888d/artifacts
+end_time: 1688647265459
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d7b588fa58a84a20a92128037661888d
+run_name: enchanting-boar-705
+run_uuid: d7b588fa58a84a20a92128037661888d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688647264874
+status: 3
+tags: []
+user_id: user

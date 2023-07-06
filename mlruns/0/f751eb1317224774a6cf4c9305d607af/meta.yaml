@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/f751eb1317224774a6cf4c9305d607af/artifacts
+end_time: 1688647640529
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f751eb1317224774a6cf4c9305d607af
+run_name: gaudy-wolf-815
+run_uuid: f751eb1317224774a6cf4c9305d607af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688647613111
+status: 3
+tags: []
+user_id: user

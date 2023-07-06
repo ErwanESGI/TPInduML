@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/e22fb8dccfed4767847c23628809605e/artifacts
+end_time: 1688646622103
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e22fb8dccfed4767847c23628809605e
+run_name: amazing-foal-545
+run_uuid: e22fb8dccfed4767847c23628809605e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688646596841
+status: 3
+tags: []
+user_id: user

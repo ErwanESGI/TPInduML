@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/91870bdfeadd425185c4603434d193be/artifacts
+end_time: 1688647432471
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 91870bdfeadd425185c4603434d193be
+run_name: bustling-steed-162
+run_uuid: 91870bdfeadd425185c4603434d193be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688647405179
+status: 3
+tags: []
+user_id: user

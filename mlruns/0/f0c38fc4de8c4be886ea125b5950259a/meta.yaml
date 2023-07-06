@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/f0c38fc4de8c4be886ea125b5950259a/artifacts
+end_time: 1688643946986
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f0c38fc4de8c4be886ea125b5950259a
+run_name: gregarious-hound-765
+run_uuid: f0c38fc4de8c4be886ea125b5950259a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688643909870
+status: 3
+tags: []
+user_id: user

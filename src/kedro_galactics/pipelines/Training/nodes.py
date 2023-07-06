@@ -9,7 +9,6 @@ def create_model(input_shape=(7, 1), units=256, activation='relu', l2_value=0.00
     inputs = layers.Input(shape=input_shape)
 
     # Définition des couches de convolution
-
     x = layers.Conv1D(filters=32, kernel_size=3, activation=activation)(inputs)
     x = layers.MaxPooling1D(pool_size=2)(x)
     x = layers.ZeroPadding1D(padding=1)(x)
@@ -34,16 +33,21 @@ def create_model(input_shape=(7, 1), units=256, activation='relu', l2_value=0.00
     return model
 
 
-def training_model(train_data, train_labels, test_data, test_label, epochs=10, batch_size=64):
+def training_model(train_data, train_labels, test_data, test_labels, epochs=10, batch_size=64):
+
     # Création du modèle
     model = create_model()
 
+    #Enregistrement du modèle
     mlflow.autolog()
+    
+    with mlflow.start_run() as run:
+        # Entraînement du modèle
+        model.fit(train_data, train_labels, epochs=epochs, batch_size=batch_size)
 
-    # Entraînement du modèle
-    model.fit(train_data, train_labels, epochs=epochs, batch_size=batch_size)
+    # Retourner les données d'entraînement et de test
+    return train_data, train_labels, test_data, test_labels
 
-    return ["train_data","train_labels","test_data","test_labels"]
 
 
 
