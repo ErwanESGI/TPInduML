@@ -3,6 +3,8 @@ import pandas as pd
 import mlflow
 from sklearn.metrics import mean_squared_error
 from math import sqrt
+from sklearn.metrics import accuracy_score
+
 
 def test_model():
     test_df_x = pd.read_csv("data/05_model_input/test.csv")
@@ -19,23 +21,14 @@ def test_model():
     model = mlflow.tensorflow.load_model('runs:/238f96bf4c96412e962aa6fe76e673d0/model')
     predictions = model.predict(test_df_x)
 
-    test_df_y = test_df_x.reshape(-1,7)
+    test_df_y = test_df_y.reshape(-1,7)
 
     # Calcul du %erreurs root-mean-square
     mse = sqrt(mean_squared_error(predictions, test_df_y))
+
     print(mse)
 
 pytest.main()
 
 
-"""def test_model_performance(model, test_data, test_label):
-    # Création du modèle
-    model = create_model()
-    # Prédiction sur les données de test
-    y_pred = model.predict(test_data)
-
-    # Calcul de la métrique de performance (ex: accuracy)
-    accuracy = accuracy_score(test_label, y_pred)
-
-    # Vérification de la métrique de performance à l'aide d'une assertion
-    assert accuracy > 0.4  # Exemple d'assertion sur l'accuracy"""
+    

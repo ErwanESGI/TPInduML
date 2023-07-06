@@ -6,7 +6,7 @@ from typing import Dict
 
 from kedro.pipeline import Pipeline
 from kedro_galactics.pipelines import (
-    Training as my_pip,
+    Deploiment as my_pip,
 ) 
 
 def register_pipelines() -> Dict[str, Pipeline]:

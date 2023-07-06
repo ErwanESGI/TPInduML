@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/kedro-galactics/mlruns/0/85672e3721504b9fbcdbaed3f8b7fdf7/artifacts
+end_time: 1688658637451
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 85672e3721504b9fbcdbaed3f8b7fdf7
+run_name: treasured-goose-798
+run_uuid: 85672e3721504b9fbcdbaed3f8b7fdf7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688658614030
+status: 4
+tags: []
+user_id: user
